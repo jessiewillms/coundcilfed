@@ -1,0 +1,25 @@
+@import "variables";
+@import "type";
+
+img {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	/*use that cool layout where the h1 text hangs over the photo real cool*/
+}
+
+main {
+	width: 100%;
+	padding: $padding;
+}
+
+.row {
+	width: 100%;
+}
+
+.wrapper {
+	width: 33.3%;
+	float: left;
+}

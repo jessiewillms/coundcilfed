@@ -1,0 +1,64 @@
+@import "variables";
+@import "clearfix";
+@import "normalize";
+@import "type";
+* {
+	box-sizing: border-box;
+}
+/* start header section */
+header {
+	width: 100%;
+	margin-bottom: 175px;
+	max-width: 825px;
+	height: 250px;
+	display: block;
+	background: url(http://www.ipolitics.ca/wp-content/uploads/2014/08/51B74309-1560-95DA-4343DE520CEC7629.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center; 
+}
+
+.title {
+		position: relative;
+		padding: 0 5%;
+		bottom: -75%;
+		clear: both;
+		margin-bottom: 15px;
+		display: block;
+	}
+/* end header section */
+
+/* main body section */
+main {
+
+	max-width: 825px;
+	display: block;
+	margin: 0 auto;
+}
+/* end main body section */
+
+/* sections */
+.row {
+	width: 275px;
+	float: left;
+	padding: 10px;
+
+	/*&:nth-child(1) {
+		border: 2px solid purple;
+	}
+
+	&:nth-child(2) {
+		border: 2px solid red;
+	}
+
+	&:nth-child(3) {
+		border: 2px solid blue;
+	}*/
+}
+
+.wrapper {
+	width: 100%;
+	padding-bottom: 5%;
+	border-bottom: 10px solid $color;
+}
+
