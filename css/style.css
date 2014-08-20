@@ -196,10 +196,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
-}
-
 h1 {
   font-size: 5em;
   color: #333333;
@@ -210,24 +206,30 @@ h1 {
 h2 {
   font-size: 3.25em;
   color: #333333;
+  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
 }
 
 h3 {
-  font-size: 2.5em;
-  color: #333333;
-  padding: 5% 0;
-  line-height: .95;
+  font-size: 1.45em;
+  color: white;
+  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+}
+
+span {
+  color: white;
+  font-style: italic;
+  font-family: "Droid Sans", Helvetica, Arial, Gill Sans, sans-serif;
 }
 
 h5 {
-  font-size: .85;
+  font-size: .5;
   text-transform: uppercase;
-  color: #751c1e;
-  margin: 20px 0px -10px 0px;
+  color: white;
+  font-family: "Droid Sans", Helvetica, Arial, Gill Sans, sans-serif;
 }
 
 p {
-  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+  font-family: "Droid Sans", Helvetica, Arial, Gill Sans, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   color: #333333;
@@ -251,8 +253,103 @@ nav a {
   text-decoration: none;
 }
 
+/* p styles for each leader */
+p.party {
+  color: #333333;
+}
+
+p.office {
+  color: #333333;
+}
+
+p.elxn {
+  color: #333333;
+}
+
+p.strong {
+  font-weight: 700;
+}
+
+.grid {
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background: #751c1e;
+  color: white;
+}
+
+.cs-style-3 figure {
+  overflow: hidden;
+}
+
+.cs-style-3 figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+  height: 100px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 /* start header section */
@@ -291,7 +388,6 @@ main {
   width: 275px;
   float: left;
   padding: 15px;
-  background-color: yellow;
   	/*&:nth-child(1) {
   		border: 2px solid purple;
   	}

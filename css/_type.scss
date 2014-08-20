@@ -1,6 +1,3 @@
-body {
-	font-family: $font;
-}
 
 h1 {
 	font-size: 5em;
@@ -12,23 +9,29 @@ h1 {
 h2 {
 	font-size: 3.25em;
 	color: $dark;
+	font-family: $font;
 }
 
 h3 {
-	font-size: 2.5em;
-	color: $dark;
-	padding: 5% 0;
-	line-height: .95;
+	font-size: 1.45em;
+	color: $light;
+	font-family: $font;
+}
+
+span {
+	color: $light;
+	font-style: italic;
+	font-family: $font2; 
 }
 h5 {
-	font-size: .85;
+	font-size: .5;
 	text-transform: uppercase;
-	color: $color;
-	margin: 20px 0px -10px 0px;
+	color: white;
+	font-family: $font2;
 }
 
 p {
-	font-family: $font;
+	font-family: $font2;
 	font-size: 1em;
 	line-height: 1.5;
 	color: $dark;
@@ -55,3 +58,19 @@ nav {
 	}
 }
 
+/* p styles for each leader */
+p.party {
+	color: $dark;
+}
+
+p.office {
+	color: $dark;
+}
+
+p.elxn {
+	color: $dark;
+}
+
+p.strong {
+	font-weight: 700;
+}

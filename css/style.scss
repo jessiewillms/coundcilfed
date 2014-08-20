@@ -2,9 +2,14 @@
 @import "clearfix";
 @import "normalize";
 @import "type";
+@import "caption";
 * {
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
 /* start header section */
 header {
 	width: 100%;
@@ -30,7 +35,6 @@ header {
 
 /* main body section */
 main {
-
 	max-width: 825px;
 	display: block;
 	margin: 0 auto;
@@ -42,7 +46,6 @@ main {
 	width: 275px;
 	float: left;
 	padding: 15px;
-	background-color: yellow;
 
 	/*&:nth-child(1) {
 		border: 2px solid purple;
